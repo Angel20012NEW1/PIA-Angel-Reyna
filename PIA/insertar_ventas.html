@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Insertar Ventas</title>
+	<link rel="stylesheet" type="text/css" href="CSS.css">
+</head>
+<body>
+<ul>
+  <li><a href="PIA.html">INICIO</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">INVENTARIO</a>
+    <div class="dropdown-content">
+      <a href="consulta_articulos.php">Articulos</a>
+      <a href="consulta_proveedores.php">Proveedores</a>
+      <a href="consulta_ventas.php">Ventas</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">INGRESAR REGISTROS</a>
+    <div class="dropdown-content">
+      <a href="insertar_articulos.html">Articulos</a>
+      <a href="insertar_proveedores.html">Proveedores</a>
+      <a href="insertar_ventas.html">Ventas</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">BORRAR REGISTROS</a>
+    <div class="dropdown-content">
+      <a href="marco_borrar_articulos.php">Articulos</a>
+      <a href="marco_borrar_proveedores.php">Proveedores</a>
+      <a href="marco_borrar_ventas.php">Ventas</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">ACTUALIZAR REGISTROS</a>
+    <div class="dropdown-content">
+      <a href="actualizar_articulos.php">Articulos</a>
+      <a href="actualizar_prov.php">Proveedores</a>
+      <a href="actualizar_ventas.php">Ventas</a>
+    </div>
+  </li>
+</ul>
+<br>
+<br>
+	<center>
+		<h1>Insertar Ventas</h1>
+		<form action="insertar_ventas.php" method="POST">
+			<table border="2" solid blue>
+				<tr>
+					<td>Clave: </td>
+					<td><input type="text" name="clave_vta"></td>
+				</tr>
+				<tr>
+					<td>Cantidad: </td>
+					<td><input type="text" name="cantidad_vta"></td>
+				</tr>
+				<tr>
+					<td>Precio: </td>
+					<td><input type="text" name="precio_vta"></td>
+				</tr>
+				<tr>
+					<td>Numero de Ventas: </td>
+					<td><input type="text" name="numeroventa_vta"></td>
+				</tr>
+				<tr><td colspan="2" align="center"><input type="submit" value="Grabar"></td></tr>
+			</table>
+	</center>
+</body>
+<footer>
+  <p><div align="center" id="copyright">Copyright&copy; 2022. Pagina creada por Angel Reyna - Todos los derechos reservados</div></p>
+</footer>
+</html>
